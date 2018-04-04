@@ -1,0 +1,28 @@
+{
+    "name": "jjh/mathy",
+    "description": "A Laravel package for adding math functions.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Hill",
+            "email": "josh@wisetail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "jjh\\Mathy\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "jjh\\Mathy\\MathyServiceProvider"
+            ],
+            "aliases": {
+                "Mathy": "jjh\\Mathy\\MathyFacade"
+            }
+        }
+    }
+}
